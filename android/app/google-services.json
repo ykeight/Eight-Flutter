@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "856838751623",
+    "project_id": "project-8000k",
+    "storage_bucket": "project-8000k.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856838751623:android:26d922a9287ec487e23f22",
+        "android_client_info": {
+          "package_name": "com.joo.projj"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD92aWblYOPQIdnUnL9ykLlNwxcKOI-nA4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
