@@ -1,16 +1,16 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, no_logic_in_create_state
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class SignOut extends StatefulWidget {
+  const SignOut({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<SignOut> createState() => _SignOutState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _SignOutState extends State<SignOut> {
   final user = FirebaseAuth.instance.currentUser!;
 
   @override

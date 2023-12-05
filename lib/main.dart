@@ -5,10 +5,11 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:projj/auth.dart';
 import 'package:projj/home_screen.dart';
 import 'package:projj/screens/CartPage.dart';
+import 'package:projj/screens/ItemPage.dart';
 import 'package:projj/screens/login_screen.dart';
+import 'package:projj/screens/signout.dart';
 import 'package:projj/screens/signup.dart';
 import 'firebase_options.dart';
-
 
 // ...
 void main() async {
@@ -41,6 +42,8 @@ class MyApp extends StatelessWidget {
         'signupScreen': (context) => Signup(),
         'loginScreen': (context) => Loginscreen(),
         'cartPage': (context) => CartPage(),
+        'itemPage': (context) => ItemPage(),
+        'signoutScreen': (context) => SignOut(),
       },
     );
   }

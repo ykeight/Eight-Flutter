@@ -90,31 +90,56 @@ class DrawerWidget extends StatelessWidget {
               ),
             ),
           ),
-          ListTile(
-            leading: Icon(
-              CupertinoIcons.settings,
-              color: Colors.red,
+          ElevatedButton.icon(
+            onPressed: () {
+              Navigator.of(context).pushReplacementNamed('signoutScreen');
+            },
+            style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.all(Colors.red),
+              padding: MaterialStateProperty.all(
+                EdgeInsets.symmetric(vertical: 13, horizontal: 15),
+              ),
+              shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),
+              )),
             ),
-            title: Text(
-              "Settings",
+            icon: Icon(
+              CupertinoIcons.cart,
+              color: Colors.white,
+            ),
+            label: Text(
+              "log out",
               style: TextStyle(
-                fontSize: 18,
+                fontSize: 16,
                 fontWeight: FontWeight.bold,
+                color: Colors.white,
               ),
             ),
-          ),
-          ListTile(
-            leading: Icon(
-              Icons.exit_to_app,
-              color: Colors.red,
-            ),
-            title: Text(
-              "Log Out",
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+            //   leading: Icon(
+            //     CupertinoIcons.settings,
+            //     color: Colors.red,
+            //   ),
+            //   title: Text(
+            //     "Settings",
+            //     style: TextStyle(
+            //       fontSize: 18,
+            //       fontWeight: FontWeight.bold,
+            //     ),
+            //   ),
+            // ),
+            // ListTile(
+            //   leading: Icon(
+            //     Icons.exit_to_app,
+            //     color: Colors.red,
+            //   ),
+            //   title: Text(
+            //     "Log Out",
+            //     style: TextStyle(
+            //       fontSize: 18,
+            //       fontWeight: FontWeight.bold,
+            //     ),
+            //   ),
           ),
         ],
       ),
